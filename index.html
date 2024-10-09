@@ -15,7 +15,6 @@
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
         <link rel="stylesheet" href="plugin/chalkboard/style.css" />
-        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
@@ -271,28 +270,8 @@
                     RevealNotes,
                     RevealMermaid,
                     RevealChalkboard,
-                    RevealCustomControls,
                 ],
                 slideNumber: true,
-                customcontrols: {
-                    controls: [
-                        {
-                            icon: '<div>X</div>',
-                            title: 'Clear canvas (DEL)',
-                            action: 'RevealChalkboard.clear();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle chalkboard (B)',
-                            action: 'RevealChalkboard.toggleChalkboard();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle notes canvas (C)',
-                            action: 'RevealChalkboard.toggleNotesCanvas();',
-                        },
-                    ],
-                },
                 chalkboard: {
                     boardmarkerWidth: 5,
                     boardmarkers: [
